@@ -12,6 +12,20 @@ public class C06_Encaptulation {
         Ve Bazı class üyelerinin her iki yetkiyede sahip olması istenir
 
         Java bu yetkilendirme işlemini Encaptulation ile çözmüştür
+
+        sadece yazma yetkisi için setter methodu
+        sadece okuma yetkisi için getter methodu
+        her ikisi içinde getter ve setter methodu kullanılır
          */
+        Encapsulation obj1=new Encapsulation();
+     obj1.setSatis(100);
+     obj1.setSatis(200);
+     obj1.setSatis(300);
+     obj1.setSatis(400);
+
+        System.out.println(Encapsulation.getToplamSatis());
+
+        obj1.setHalkaAcikSayi(400);
+        System.out.println(obj1.getHalkaAcikSayi());
     }
 }
