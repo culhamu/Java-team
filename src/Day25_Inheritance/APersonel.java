@@ -7,7 +7,7 @@ public class APersonel {
     public static void main(String[] args) {
 
     }protected   void maas(){
-        System.out.println("Hastanemizde uygulanan asgari ücret 1700 euro dur");
+        System.out.println("Hastanemizde uygulanan asgari ücret 1700 euro dur.");
     }protected void ozelSigorta(){
         System.out.println("Tüm personelin özel sağlık sigortası yaptırılır");
     }private void privateMethod(){

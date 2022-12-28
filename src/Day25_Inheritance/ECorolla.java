@@ -13,7 +13,7 @@ public class ECorolla extends DToyota {
     String uretimSehri="Sakarya";
 
     public static void main(String[] args) {
-        ECorolla cor1=new ECorolla("Mavi");
+        ECorolla cor1=new ECorolla("Mavi ");
     }
     /*
     bir obje oluşturulduğunda ilk değer ataması yapılabilmesi için constructor çalışmalıdır

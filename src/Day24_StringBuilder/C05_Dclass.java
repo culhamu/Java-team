@@ -22,7 +22,7 @@ public class C05_Dclass {
         obj1.isim="Zafer";
         System.out.println(obj1.isim);
     }static void defaultStaticMethod(){
-        System.out.println("static olan çalıştı");
+        System.out.println("static olan çalıştı ");
     }void defaultStaticOlmayanMethod(){
         System.out.println("static olmayan çalıştı");
     }
