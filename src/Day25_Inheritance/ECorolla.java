@@ -10,6 +10,7 @@ public class ECorolla extends DToyota {
     }
     String model="Corolla";
     String uretimYeri="Türkiye";
+    String uretimSehri="Sakarya";
 
     public static void main(String[] args) {
         ECorolla cor1=new ECorolla("Mavi");
