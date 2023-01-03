@@ -1,6 +1,6 @@
 package Day27_Overriding;
 
-public class GHExeptions {
+public class GHExceptions {
     public static void main(String[] args) {
 
         String str="Java neredeyse bitiyor";
