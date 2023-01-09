@@ -1,4 +1,4 @@
-package day07_ternary_Switch_Statements;
+package Day07_ternary_Switch_Statements;
 
 public class C09_switch {
     public static void main(String[] args) {

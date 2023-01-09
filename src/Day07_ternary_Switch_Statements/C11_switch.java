@@ -1,4 +1,4 @@
-package day07_ternary_Switch_Statements;
+package Day07_ternary_Switch_Statements;
 
 import java.util.Scanner;
 
