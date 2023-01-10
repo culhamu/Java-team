@@ -67,4 +67,37 @@ public class MapMethodDepo {
 
         }
     }
+
+    public static void sinifListesiMethodu(Map<Integer, String> ogrenciMap, String sinif, String sube) {
+
+        Collection<String> valueCollection=ogrenciMap.values();
+
+        System.out.println("Isim   Soyisim");
+
+        for (String eachValue:valueCollection) {
+
+            String[] valueArr=eachValue.split("-");
+            if (valueArr[2].equalsIgnoreCase(sinif)&&valueArr[3].equalsIgnoreCase(sube)){
+                System.out.println(valueArr[0]+"  "+valueArr[1]);
+            }
+        }
+    }
+
+    public static Map<Integer,String> numaraIleSubeDegistirme(Map<Integer, String> ogrenciMap, int okulNo, String yeniSubeIsmi) {
+
+        //1- okul numarasını biliyoruz direk öğrenci value ye ulasabiliriz
+
+        String ogrenciValue=ogrenciMap.get(okulNo);
+
+        String[] valueArr=ogrenciValue.split("-");
+        //2- sube ismini güncelleyelim
+        valueArr[3]=yeniSubeIsmi;
+        //3- array deki güncel bilgileri yeniden value formatinda bit string yapalım
+
+        String yeniValue=valueArr[0]+"-"+valueArr[1]+"-"+valueArr[2]+"-"+valueArr[3]+"-"+valueArr[4];
+
+        //4- öğrenci no ile key ile yeni value  map e ekleyelim
+      ogrenciMap.put(okulNo,yeniValue);
+      return ogrenciMap;
+    }
 }
