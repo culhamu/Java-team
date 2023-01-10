@@ -1,6 +1,6 @@
 package Day24_StringBuilder;
 
-import Day25_Inheritance.APersonel;
+import day25_Inheritance.APersonel;
 
 public class FChildOfPersonel extends APersonel {
     public static void main(String[] args) {
