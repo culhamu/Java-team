@@ -131,4 +131,24 @@ public class MapMethodDepo {
             }
         }
     }
+
+    public static void bolumListesiOlusturma(Map<Integer, String> ogrenciMap, String bolum) {
+
+
+        Set<Map.Entry<Integer, String>> entryBolumSeti= ogrenciMap.entrySet();
+
+        System.out.println("No isim soyisim sinif");
+        System.out.println("=====================");
+        for (Map.Entry<Integer,String> eachEntry:entryBolumSeti) {
+
+            String[] valueArr=eachEntry.getValue().split("-");
+            if (valueArr[4].equalsIgnoreCase(bolum)){
+                System.out.println(eachEntry.getKey() + " " +
+                        valueArr[0] +" "+
+                        valueArr[1]+ " "+
+                        valueArr[2]);
+            }
+        }
+
+    }
 }

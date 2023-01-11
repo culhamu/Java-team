@@ -8,6 +8,6 @@ public class C08_SubeListesiOlustur {
 
         Map<Integer,String> ogrenciMap=MapMethodDepo.ogrenciMapOlustur();
 
-        MapMethodDepo.sinifListesiMethodu(ogrenciMap,"10","k");
+        MapMethodDepo.subeListesiMethodu(ogrenciMap,"10","k");
     }
 }
