@@ -3,6 +3,7 @@ package day32_Sets_Maps;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MapMethodDepo {
     //Bizze öğrenciMap döndüren bir method oluşturun
@@ -68,7 +69,7 @@ public class MapMethodDepo {
         }
     }
 
-    public static void sinifListesiMethodu(Map<Integer, String> ogrenciMap, String sinif, String sube) {
+    public static void subeListesiMethodu(Map<Integer, String> ogrenciMap, String sinif, String sube) {
 
         Collection<String> valueCollection=ogrenciMap.values();
 
@@ -99,5 +100,35 @@ public class MapMethodDepo {
         //4- öğrenci no ile key ile yeni value  map e ekleyelim
       ogrenciMap.put(okulNo,yeniValue);
       return ogrenciMap;
+    }
+
+    public static void sinifListesiYazdirma(Map<Integer, String> ogrenciMap, String sinif) {
+        // verilen siniftaki ogrencilerin no, isim, soyisim, bolumlerini
+        // bir liste olarak yazdiran bir method olusturun
+
+        System.out.println("No isim soyisim bolum");
+        System.out.println("=====================");
+
+        Set<Map.Entry<Integer, String>> entrySeti = ogrenciMap.entrySet();
+
+        for (Map.Entry<Integer,String> eachEntry: entrySeti
+        ) { // 101=Ali-Can-11-H-MF
+
+            // 1- entry'den value'yu alalim
+            String entryValue= eachEntry.getValue(); // Ali-Can-11-H-MF
+
+            // 2- bu value'yu parcalayalim ve bir array'e store edelim
+            String[] valueArr= entryValue.split("-"); // [Ali, Can, 11, H, MF]
+
+            // sinif bilgisini kontrol edip
+            // istenen sinif ile ayni ise, istenen bilgileri yazdiralim
+
+            if (valueArr[2].equalsIgnoreCase(sinif)){
+                System.out.println(eachEntry.getKey() + " " +
+                        valueArr[0] +" "+
+                        valueArr[1]+ " "+
+                        valueArr[4]);
+            }
+        }
     }
 }
