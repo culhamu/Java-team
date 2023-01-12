@@ -20,5 +20,12 @@ public class C03_MapMethodlari {
 
         ogrenciMap.put(103,"Ali-Cem-12-K-MF");
         System.out.println(ogrenciMap.get(103));//Ali-Cem-12-K-MF
+
+        ogrenciMap.replace(123,"Ali-Cem-11-K-MF");
+        System.out.println(ogrenciMap.get(123));//null
+        System.out.println(ogrenciMap);
+
+        ogrenciMap.replace(103,"Ali-Cem-12-K-MF","Ali-Han-12-K-MF");
+        System.out.println(ogrenciMap.get(103));//Ali-Han-12-K-MF
     }
 }
