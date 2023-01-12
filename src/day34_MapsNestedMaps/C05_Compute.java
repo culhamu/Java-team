@@ -39,6 +39,8 @@ public class C05_Compute {
         harfsayilariMap.computeIfAbsent("T",v->3);
         System.out.println(harfsayilariMap);//{A=20, C=30, D=8, K=3, T=3}
 
+        harfsayilariMap.putIfAbsent("S",25);
+        System.out.println(harfsayilariMap);//{A=20, C=30, D=8, K=3, S=25, T=3}
 
 
     }
