@@ -10,7 +10,7 @@ public class C01_arrayList {
     public static void main(String[] args) {
 
         String[] arr={"A","B","T"};
-        //bu stringe element eklement istersek
+        //bu stringe element eklemek istersek
        arr= C10_arrayeBirElementEkleme.arrayeElementEkleme(arr,"C");
         System.out.println(Arrays.toString(arr));//A,B,T,C
         //arrayList esnek uzunluktaki bir arraydir

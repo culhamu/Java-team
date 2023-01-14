@@ -9,12 +9,12 @@ public class C07_soru {
         int [] arr={2,3,4,2,6,7,4,1,9,8,4,2,3,5};
         int arananSayi=2;
 
-    }public static void elemanbul(int [] arr,int[] arananSayi){
+    }public static void elemanbul(int [] arr,int arananSayi){
         int sayac=0;
         for (int i = 0; i < arr.length; i++) {
-            {
+            if (arr[i]==arananSayi)
                 sayac++;
-            }
+
 
         }
     }
