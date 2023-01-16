@@ -262,7 +262,8 @@ public class MapMethodDepo {
         System.out.println("==========================");
 
         for (String each : siraliOgrenciSeti) {
-            System.out.println(each);
+           System.out.println(each);
+
         }
 
     }
@@ -292,11 +293,19 @@ public class MapMethodDepo {
         }
 
         // sirali set'i yazdiralim
-        System.out.println("isim soyisim no sinif sube bolum");
+        System.out.println("isim soyisim  no  sinif sube bolum");
         System.out.println("================================");
 
         for (String each : isimSoyisimSiraliSet) {
-            System.out.println(each);
+            //System.out.println(each);
+            String[] duzenliYazdirArr=each.split(" ");
+            String sinif=duzenliYazdirArr[3];
+            String sube=duzenliYazdirArr[4];
+            String isim=duzenliYazdirArr[0];
+            String soyisim=duzenliYazdirArr[1];
+            String no=duzenliYazdirArr[2];
+            String bolum=duzenliYazdirArr[5];
+            System.out.printf("%-6s %-6s %-3s  %2s    %s    %2s%n",isim,soyisim,no,sinif,sube,bolum);
         }
 
     }

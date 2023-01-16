@@ -1,5 +1,7 @@
 package day35_GenelTekrar;
 
+import day32_Sets_Maps.MapMethodDepo;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -31,6 +33,7 @@ public class C01_PrintfCarpimTablosu {
             System.out.println("");
 
         }
+
 
     }
 }
