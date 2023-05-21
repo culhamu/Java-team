@@ -8,8 +8,8 @@ public class C09_NumaraIleSubeGuncelleme {
 
         Map<Integer,String> ogrenciMap=MapMethodDepo.ogrenciMapOlustur();
 
-        ogrenciMap=MapMethodDepo.numaraIleSubeDegistirme(ogrenciMap,104,"M");
-        ogrenciMap=MapMethodDepo.numaraIleSubeDegistirme(ogrenciMap,101,"L");
+        MapMethodDepo.numaraIleSubeDegistirme(ogrenciMap, 104, "M");
+        MapMethodDepo.numaraIleSubeDegistirme(ogrenciMap, 101, "L");
         System.out.println(ogrenciMap);
     }
 }
