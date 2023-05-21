@@ -7,6 +7,8 @@ public class C01_staticBlock {
 
     public static void main(String[] args) {
         System.out.println("Main method çalıştı");
+        C01_staticBlock car=new C01_staticBlock();
+        System.out.println(car);
     }
     static {
         System.out.println("Static block çalıştı");
