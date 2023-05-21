@@ -19,13 +19,8 @@ public class C06_ifElseIf {
         } else if ((cinsiyet=='E'||cinsiyet=='e')&& yas>=65) {
             System.out.println("Emekli olabilir");
         } else if ((cinsiyet=='E'||cinsiyet=='e')&& yas>=18) {
-            System.out.println("Emekli olmak için:"+(65-yas)+"Yıl daha çalışmalıdır"); {
+            System.out.println("Emekli olmak için:"+(65-yas)+"Yıl daha çalışmalıdır");
 
-        }
-
-    }
-        {
-            
         }
 
     }
